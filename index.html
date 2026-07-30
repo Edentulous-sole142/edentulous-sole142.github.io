@@ -348,3 +348,184 @@ DOCUMENTARIES
 </div>
 
 </section>
+<section id="about">
+
+<h2 class="section-title">ABOUT</h2>
+
+<p class="section-text">
+
+Foroud Paknia is an Iranian filmmaker, screenwriter and researcher whose work explores cinema, history, identity and cultural memory. His projects combine artistic storytelling with documentary observation and academic research, creating films that connect audiences with people, places and ideas.
+
+</p>
+
+</section>
+
+<section id="films">
+
+<h2 class="section-title">FEATURE FILMS</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Hotel Dog</h3>
+<p>
+A feature comedy exploring unexpected human relationships through an absurd and emotional journey.
+</p>
+</div>
+
+<div class="card">
+<h3>Against the Screenplay</h3>
+<p>
+A metafictional feature film in which a character discovers the screenplay controlling his existence and rebels against its author.
+</p>
+</div>
+
+<div class="card">
+<h3>In Development</h3>
+<p>
+Original feature film projects currently under writing and development.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="documentaries">
+
+<h2 class="section-title">DOCUMENTARIES</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Falak-ol-Aflak</h3>
+<p>
+A cinematic journey through one of Iran's most important historical landmarks and the collective memory of Zagros.
+</p>
+</div>
+
+<div class="card">
+<h3>The Last Path</h3>
+<p>
+A feature documentary exploring humanity, endurance and the meaning of the final journey.
+</p>
+</div>
+
+<div class="card">
+<h3>New Documentary Projects</h3>
+<p>
+Documentary productions focusing on culture, archaeology, history and social narratives.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="section-title">RESEARCH</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cinema & Artificial Intelligence</h3>
+<p>
+Research on the future of filmmaking, production and storytelling in the age of AI.
+</p>
+</div>
+
+<div class="card">
+<h3>Film Studies</h3>
+<p>
+Research in visual storytelling, screenplay structure and cinematic language.
+</p>
+</div>
+
+<div class="card">
+<h3>Cultural Heritage</h3>
+<p>
+Projects connecting cinema with history, archaeology and cultural identity.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">CONTACT</h2>
+
+<p class="section-text">
+
+For collaborations, film productions, festival invitations and research partnerships, please get in touch.
+
+</p>
+
+<div class="buttons" style="margin-top:50px;">
+
+<a class="btn" href="mailto:info@foroudpaknia.com">
+EMAIL
+</a>
+
+<a class="btn dark" href="#">
+DOWNLOAD CV
+</a>
+
+</div>
+
+</section>
+<footer style="padding:70px 8%;border-top:1px solid #222;text-align:center;">
+
+<h2 style="font-family:'Cormorant Garamond',serif;font-size:42px;letter-spacing:4px;margin-bottom:15px;">
+FOROUD PAKNIA
+</h2>
+
+<p style="color:#999;letter-spacing:2px;margin-bottom:30px;">
+Filmmaker • Screenwriter • Researcher
+</p>
+
+<p style="color:#666;font-size:14px;">
+© 2026 Foroud Paknia. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:"translateY(40px)"},
+
+{opacity:1,transform:"translateY(0)"}
+
+],{
+
+duration:900,
+
+fill:"forwards",
+
+easing:"ease"
+
+});
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section,.card").forEach(el=>observer.observe(el));
+
+</script>
+
+</body>
+
+</html>
